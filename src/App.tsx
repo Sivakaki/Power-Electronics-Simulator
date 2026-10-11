@@ -45,35 +45,35 @@ export default function App() {
       {/* Top Header */}
       <Header />
 
-      {/* Main Workspace Grid */}
-      <div className="flex-1 flex flex-col min-h-0 overflow-y-auto lg:overflow-hidden p-2 gap-2 bg-[#090d16]">
+      {/* Main Workspace with Smooth Scrolling */}
+      <div className="flex-1 min-h-0 overflow-y-auto p-2 space-y-2 bg-[#090d16]">
         {/* Top Split: Circuit Library | Schematic | Parameters */}
-        <div className="flex-none lg:flex-1 grid grid-cols-1 lg:grid-cols-12 gap-2 min-h-[380px] lg:min-h-0">
-          {/* Left: Circuit Library (2.5 cols) */}
-          <div className="lg:col-span-3 xl:col-span-2 h-[340px] lg:h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 min-h-[460px]">
+          {/* Left: Circuit Library */}
+          <div className="lg:col-span-3 xl:col-span-2 h-[460px]">
             <CircuitLibrary />
           </div>
 
-          {/* Center: Circuit Schematic (6.5 cols) */}
-          <div className="lg:col-span-6 xl:col-span-7 h-[360px] lg:h-full">
+          {/* Center: Circuit Schematic */}
+          <div className="lg:col-span-6 xl:col-span-7 h-[460px]">
             <SchematicView />
           </div>
 
-          {/* Right: Parameter Panel (3 cols) */}
-          <div className="lg:col-span-3 xl:col-span-3 h-[380px] lg:h-full">
+          {/* Right: Parameter Panel */}
+          <div className="lg:col-span-3 xl:col-span-3 h-[460px]">
             <ParameterPanel />
           </div>
         </div>
 
         {/* Bottom Split: Oscilloscope & Analysis Panel */}
-        <div className="flex-none lg:flex-1 grid grid-cols-1 lg:grid-cols-12 gap-2 min-h-[360px] lg:min-h-0">
-          {/* Oscilloscope Waveforms (7 cols) */}
-          <div className="lg:col-span-7 h-[340px] lg:h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-2 min-h-[440px]">
+          {/* Oscilloscope Waveforms */}
+          <div className="lg:col-span-7 h-[440px]">
             <Oscilloscope />
           </div>
 
-          {/* Measurements / FFT / Device States / Theory (5 cols) */}
-          <div className="lg:col-span-5 h-[340px] lg:h-full">
+          {/* Measurements / FFT / Device States / Theory */}
+          <div className="lg:col-span-5 h-[440px]">
             <AnalysisPanel />
           </div>
         </div>

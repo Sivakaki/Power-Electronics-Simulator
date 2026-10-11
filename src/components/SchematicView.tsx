@@ -334,7 +334,7 @@ export const SchematicView: React.FC = () => {
         const isFwCond = dfw.isConduction && isIoFlowing;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* Base circuit wires */}
             <path d="M 140 120 L 260 120" className="stroke-slate-600 stroke-2 fill-none" />
@@ -411,7 +411,7 @@ export const SchematicView: React.FC = () => {
         const isD2Cond = d2.isConduction && isIoFlowing;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* Primary Source */}
             <g transform="translate(60, 120)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
@@ -508,7 +508,7 @@ export const SchematicView: React.FC = () => {
         const isFw = dfw.isConduction && isIoFlowing;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* Base AC Source */}
             <g transform="translate(60, 130)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
@@ -615,7 +615,7 @@ export const SchematicView: React.FC = () => {
         const isFw = dfw.isConduction && isIoFlowing;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             <g transform="translate(60, 130)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
               <AcSourceSymbol label="AC Supply" sublabel={`${params.vRms}V α=${params.firingAngle}°`} orientation="v" />
@@ -721,7 +721,7 @@ export const SchematicView: React.FC = () => {
         const isFw = dfw.isConduction && isIoFlowing;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             <g transform="translate(60, 130)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
               <AcSourceSymbol label="AC Supply" sublabel={`${params.vRms}V α=${params.firingAngle}°`} orientation="v" />
@@ -821,7 +821,7 @@ export const SchematicView: React.FC = () => {
         const dc = devices['Dc'] || { isConduction: false, voltage: 0, current: 0 };
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* 3-Phase Sources */}
             <g transform="translate(40, 60)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
@@ -919,7 +919,7 @@ export const SchematicView: React.FC = () => {
         const d2 = devices['D2']?.isConduction;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* 3-Phase Sources */}
             <g transform="translate(40, 70)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
@@ -1052,7 +1052,7 @@ export const SchematicView: React.FC = () => {
         const t2 = devices['T2']?.isConduction;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* 3-Phase Sources */}
             <g transform="translate(40, 70)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
@@ -1180,7 +1180,7 @@ export const SchematicView: React.FC = () => {
         const dfw = devices['DFW'] || { isConduction: false, voltage: 0, current: 0 };
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* 3-Phase Sources */}
             <g transform="translate(40, 70)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
@@ -1316,7 +1316,7 @@ export const SchematicView: React.FC = () => {
         const isRev = t2.isConduction && isIoFlowing;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* AC Supply */}
             <g transform="translate(80, 130)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
@@ -1383,7 +1383,7 @@ export const SchematicView: React.FC = () => {
         const tC = devices['T1C']?.isConduction && isIoFlowing;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* 3-Phase Sources */}
             <g transform="translate(40, 70)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
@@ -1474,7 +1474,7 @@ export const SchematicView: React.FC = () => {
         const isNegDrive = (b2t1.isConduction || sample.io < -0.05) && isIoFlowing;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* Input AC Supply */}
             <g transform="translate(40, 130)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
@@ -1564,7 +1564,7 @@ export const SchematicView: React.FC = () => {
         const isNegDrive = sample.io < -0.05 && isIoFlowing;
 
         return (
-          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px]">
+          <svg viewBox="0 0 860 380" className="w-full h-full max-h-[380px] select-none block" style={{ minHeight: '280px', width: '100%', height: '100%' }} preserveAspectRatio="xMidYMid meet">
             <SvgGlowFilters />
             {/* 3-Phase Source Box */}
             <g transform="translate(40, 120)" className={highlightClass('source')} onClick={() => setSelectedComponentId('source')}>
@@ -1783,9 +1783,15 @@ export const SchematicView: React.FC = () => {
       </div>
 
       {/* Schematic Canvas with Dot Matrix Background */}
-      <div className="relative flex-1 flex items-center justify-center p-2 overflow-hidden bg-[#0b1120]">
+      <div 
+        className="relative flex-1 min-h-[300px] w-full flex items-center justify-center p-2 overflow-hidden bg-[#0b1120]"
+        style={{
+          backgroundImage: 'radial-gradient(#334155 1.2px, transparent 1.2px)',
+          backgroundSize: '24px 24px'
+        }}
+      >
         <div
-          className="w-full h-full flex items-center justify-center transition-transform duration-100"
+          className="w-full h-full min-h-[280px] flex items-center justify-center transition-transform duration-100"
           style={{ transform: `scale(${zoomLevel})` }}
         >
           {renderCircuitGraphic()}
