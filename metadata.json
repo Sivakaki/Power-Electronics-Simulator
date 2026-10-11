@@ -1,0 +1,6 @@
+{
+  "name": "PowerSim - Power Electronics Virtual Laboratory",
+  "description": "Interactive educational power electronics simulation platform with circuit schematics, numerical ODE solvers, oscilloscope waveforms, and harmonic FFT analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+@keyframes flowCurrentForward {
+  from {
+    stroke-dashoffset: 24;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flowCurrentReverse {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 24;
+  }
+}
+
+/* Base active wire dashes */
+.wire-current-active {
+  stroke-dasharray: 6 6;
+  animation: flowCurrentForward 0.6s linear infinite;
+  filter: drop-shadow(0 0 3px currentColor);
+}
+
+.wire-current-reverse {
+  stroke-dasharray: 6 6;
+  animation: flowCurrentReverse 0.6s linear infinite;
+  filter: drop-shadow(0 0 3px currentColor);
+}
+
+/* Dedicated Glowing Electron/Current Bead Streams */
+.current-path-active {
+  stroke-dasharray: 6 12;
+  stroke-linecap: round;
+  animation: flowCurrentForward 0.6s linear infinite;
+  filter: drop-shadow(0 0 4px #10b981) drop-shadow(0 0 8px #10b981);
+}
+
+.current-path-reverse {
+  stroke-dasharray: 6 12;
+  stroke-linecap: round;
+  animation: flowCurrentReverse 0.6s linear infinite;
+  filter: drop-shadow(0 0 4px #38bdf8) drop-shadow(0 0 8px #38bdf8);
+}
+
+.current-path-amber {
+  stroke-dasharray: 6 12;
+  stroke-linecap: round;
+  animation: flowCurrentForward 0.6s linear infinite;
+  filter: drop-shadow(0 0 4px #f59e0b) drop-shadow(0 0 8px #f59e0b);
+}
+
+.current-path-cyan {
+  stroke-dasharray: 6 12;
+  stroke-linecap: round;
+  animation: flowCurrentForward 0.6s linear infinite;
+  filter: drop-shadow(0 0 4px #06b6d4) drop-shadow(0 0 8px #06b6d4);
+}
+
+.conduction-glow-on {
+  filter: drop-shadow(0 0 8px #10b981);
+}
+
+.scr-glow-on {
+  filter: drop-shadow(0 0 8px #38bdf8);
+}
